@@ -6,7 +6,7 @@ namespace FörstaProvet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
