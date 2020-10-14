@@ -38,16 +38,17 @@ namespace FörstaProvet
                 cursed = false;
             }
 
-            //Slumpa ett namn på en bok; ANVÄND ARRAY SNABBT
-            int slumpaNamn = generator.Next(0,3);
-            string[] namnArray = {"book1", "book2", "book3"};
-            name = namnArray[slumpaNamn];
-
-            //Slumpa ett namn på en bok; ANVÄND ARRAY SNABBT
-            int slumpaKateogri = generator.Next(0,3);
-            string[] kateogiraray = {"kategori1", "kategori2", "kategori3"};
-            name = kateogiraray[slumpaNamn];
             
+            //slumpar ett tal mellan 0-2 och sedan drar den ut en från listan och sätter name till det
+            //Likadant för kategorier.
+            int slumpaNamn = generator.Next(0,3);
+            List<string> namnLista = new List<string>() {"namn1", "namn2", "namn3"};
+            name = namnLista[slumpaNamn];
+
+            int slumpaKateogri = generator.Next(0,3);
+             List<string> kategoriLista = new List<string>() {"kategori", "kategori2", "kategori3"};
+            name = kategoriLista[slumpaNamn];
+
         }
 
         public void PrintInfo() //KLAR
